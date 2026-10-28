@@ -1,0 +1,29 @@
+{
+  "skill_name": "nasa-guidance-docs",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Hypothetical: a team wants an onboard ML hazard detector on a Class B lander. Which NASA requirements actually bind the software, and must it hit 100% MC/DC on the neural net? Give clause numbers.",
+      "expected_output": "Walks SWE-020 class -> SWE-205 safety-criticality per NASA-STD-8739.8 -> SWE-023/134/219/220; says MC/DC applies to safety-critical components and notes handbook topic 7.25 guidance vs NPR text; separates binding NPR from handbook guidance; locators on every claim; no claim that NASA covers or fails to cover ML.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Hypothetical: is NASA-STD-7009B mandatory for a mission's surrogate thermal model, and is NID 1383.155 still in force when the PDF's cover says it expired in September?",
+      "expected_output": "7009B is not self-invoking (§1.2.1) and NPR 7120.10B §1.2.1; binding only where a directive or contract invokes it; NID status lives in the NODIS OPD register, NASA extends without reissuing the PDF, so the cover date is not status; points to where to check.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Hypothetical: who at NASA would decide whether a mission may use an LLM agent with its own accounts — is that OCE, OSMA, or OCIO? How do they hand off?",
+      "expected_output": "Uses offices.md: OCIO owns IT security (NPR 2810.1F) and account rules, OCE owns software engineering (NPR 7150.2D) and Engineering Technical Authority, OSMA owns software assurance (NASA-STD-8739.8B) and SMA Technical Authority; notes least-privilege definition already reaches a 'user or component'; marks interpretation.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Hypothetical: for an AI hazard-detection capability, is there anything outside NASA (EASA, NIST, DoD) that says more than NASA does about assuring a learned surrogate model? Can I cite it as what NASA requires?",
+      "expected_output": "Points to external/ pages (EASA concept paper surrogate statement, DoD T&E guidebooks, NIST AI 600-1); states outside text is comparison only, never NASA coverage; names the nearest NASA counterpart (NASA-STD-7009B, which does not invoke itself).",
+      "files": []
+    }
+  ]
+}
