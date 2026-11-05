@@ -10,7 +10,7 @@ cite a requirement, ask whether a document is in force, or route a question to a
 description fires on those moments; a document in a repo is read only by someone who already knows
 it exists.
 
-**Layout.** `skills/nasa-guidance-docs/SKILL.md` stays short: navigation and the nine traps that
+**Layout.** `skills/nasa-guidance-docs/SKILL.md` stays short: navigation and the ten traps that
 cause most wrong answers. Detail is in `references/`, read on demand:
 - `force.md` — what each document type binds, and how to check status per register.
 - `documents/<DOC>.md` — one page per NASA document. About twenty headline documents get the full
