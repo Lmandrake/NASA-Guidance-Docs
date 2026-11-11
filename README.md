@@ -27,6 +27,13 @@ Then ask, for instance, "Which NASA requirements bind software on a Class B land
 
 Without Claude, start at `skills/nasa-guidance-docs/SKILL.md`, then use `skills/nasa-guidance-docs/references/INDEX.md` to find a document page.
 
+No `.venv/`, `pyproject.toml`, or `requirements.txt` exists here: `scripts/build_index.py` is
+stdlib-only Python 3 (`import glob, os, re`), nothing else in the repo runs code. No console
+scripts, no credential-shaped env vars or login step, and no `*.plist`/LaunchAgent found —
+everything here is plain markdown plus the one index-rebuild script, run by hand.
+
+*Detected 2026-11-10, not verified by running it.*
+
 ## Map of the repo
 
 | Path | What it holds |
